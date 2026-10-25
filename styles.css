@@ -1,0 +1,338 @@
+
+
+:root {
+  --bg-surface: #e8eef5;
+  --text-main: #1e293b;
+  --text-muted: #52637a;
+  --android-green: #00a65a;
+  --android-lime: #3ddc84;
+  --google-blue: #1a73e8;
+  --shadow-light: #ffffff;
+  --shadow-dark: #c5d0de;
+  --neu-outset: 9px 9px 18px var(--shadow-dark), -9px -9px 18px var(--shadow-light);
+  --neu-outset-sm: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  --neu-inset: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+  --neu-inset-sm: inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+}
+
+body.dark-mode {
+  --bg-surface: #1e242b;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --android-green: #3ddc84;
+  --google-blue: #60a5fa;
+  --shadow-light: #272f38;
+  --shadow-dark: #15191e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  line-height: 1.65;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+.mono-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+
+.neu-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--neu-outset);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 1.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+body.dark-mode .neu-card {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.neu-card-interactive:hover {
+  transform: translateY(-4px);
+}
+
+.neu-inset {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--neu-inset);
+  padding: 1.25rem;
+}
+
+.neu-pill {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--neu-outset-sm);
+  padding: 0.4rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-main);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.neu-pill:hover,
+.neu-pill.active {
+  box-shadow: var(--neu-inset-sm);
+  color: var(--google-blue);
+}
+
+.neu-btn {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--neu-outset-sm);
+  padding: 0.65rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-main);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.neu-btn:hover {
+  box-shadow: var(--neu-inset-sm);
+  color: var(--google-blue);
+  transform: translateY(1px);
+}
+
+.neu-btn-primary {
+  color: var(--google-blue);
+}
+
+.neu-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-inset-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  color: var(--google-blue);
+  flex-shrink: 0;
+}
+
+.navbar-neu {
+  background-color: var(--bg-surface);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.75rem 0;
+}
+
+body.dark-mode .navbar-neu {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.navbar-brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.android-badge-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--android-lime);
+  box-shadow: 0 0 10px var(--android-lime);
+  display: inline-block;
+}
+
+.nav-link-neu {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.45rem 0.95rem !important;
+  border-radius: var(--radius-pill);
+  margin: 0.15rem 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link-neu:hover,
+.nav-link-neu.active {
+  color: var(--google-blue) !important;
+  box-shadow: var(--neu-inset-sm);
+}
+
+.navbar-toggler-neu {
+  border: none !important;
+  box-shadow: var(--neu-outset-sm);
+  border-radius: 12px;
+  padding: 0.45rem 0.7rem;
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+.navbar-toggler-neu:focus {
+  box-shadow: var(--neu-inset-sm);
+  outline: none;
+}
+
+.profile-avatar-wrap {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-outset);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--neu-inset-sm);
+  border: 3px solid var(--bg-surface);
+}
+
+.status-chip {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-outset-sm);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--android-green);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+
+hr.neu-hr {
+  border: none;
+  height: 10px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-inset-sm);
+  margin: 2.75rem 0;
+  opacity: 1;
+}
+
+hr.neu-hr-sub {
+  border: none;
+  height: 6px;
+  width: 90px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-inset-sm);
+  margin: 1rem 0 1.25rem 0;
+  opacity: 1;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--android-green);
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-inset-sm);
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.65rem;
+}
+
+.section-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3rem;
+}
+
+.neu-progress {
+  height: 12px;
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-surface);
+  box-shadow: var(--neu-inset-sm);
+  overflow: hidden;
+  padding: 2px;
+}
+
+.neu-progress-bar {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--google-blue), var(--android-lime));
+  transition: width 0.6s ease;
+}
+
+
+.at-spam-guard {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+ol.neu-contact-ol {
+  padding-left: 1.35rem;
+  margin-bottom: 0;
+}
+
+ol.neu-contact-ol li {
+  margin-bottom: 0.85rem;
+  padding-left: 0.35rem;
+}
+
+ol.neu-contact-ol li::marker {
+  font-weight: 700;
+  color: var(--google-blue);
+}
+
+
+.neu-input {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: none;
+  border-radius: 14px;
+  box-shadow: var(--neu-inset-sm);
+  padding: 0.75rem 1rem;
+  color: var(--text-main);
+  font-size: 0.92rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.neu-input:focus {
+  outline: none;
+  box-shadow: var(--neu-inset), 0 0 0 2px var(--google-blue);
+}

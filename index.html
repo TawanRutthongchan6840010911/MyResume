@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - ตะวัน รุททองจันทร์ (Tawan Rutthongchan)</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-neu sticky-top" aria-label="Main Navigation">
+    <div class="container">
+      <a class="navbar-brand-pill" href="#hero">
+        <span class="android-badge-dot"></span>
+        <span>dev.tawan rutthongchan<span class="text-primary">.resume</span></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button type="button" id="themeToggleBtn" class="neu-btn py-1 px-3" aria-label="สลับโหมดสี">
+          <i class="bi bi-moon-stars" id="themeIcon"></i>
+          <span class="d-none d-sm-inline" id="themeText">Dark</span>
+        </button>
+        <button class="navbar-toggler navbar-toggler-neu" type="button" data-bs-toggle="collapse" data-bs-target="#resumeNavbar" aria-controls="resumeNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="resumeNavbar">
+        <ul class="navbar-nav align-items-lg-center py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-neu active" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-neu" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-neu" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-neu" href="#experience">Experience &amp; More</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-neu" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-md-5">
+
+    <header id="hero" class="neu-card p-4 p-md-5">
+      <div class="row align-items-center g-4">
+
+        <div class="col-12 col-md-4 text-center">
+          <div class="profile-avatar-wrap">
+            <img src="T22342.jpg" alt="รูปโปรไฟล์ ตะวัน รุททองจันทร์" class="profile-avatar-img">
+            <span class="status-chip">
+              <i class="bi bi-android2"></i> CAI Student
+            </span>
+          </div>
+          
+        </div>
+
+        <div class="col-12 col-md-8 text-center text-md-start">
+          <div class="section-eyebrow">
+            <i class="bi bi-terminal"></i> Developer Profile &bull; Neumorphic Draft
+          </div>
+
+          <h1 class="display-6 fw-bold mb-2">ตะวัน รุททองจันทร์ (Tawan Rutthongchan)</h1>
+
+          <p class="fs-5 mb-2">
+            สาขาวิชา: <em class="fw-semibold text-primary">วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (Computer Engineering and Artificial Intelligence)</em>
+          </p>
+
+          <p class="mb-1">
+            <strong>คณะ:</strong> คณะวิศวกรรมศาสตร์และเทคโนโลยี (Faculty of Engineering and Technology)
+          </p>
+
+
+          <p class="mb-3">
+            <strong>สถาบันการศึกษา:</strong>
+            <a href="http://pim.ac.th" target="_blank" rel="noopener noreferrer" class="neu-pill ms-1">
+              <i class="bi bi-box-arrow-up-right text-primary"></i>
+              <img src="PIM.png" width="50" height="50" >
+              สถาบันการจัดการปัญญาภิวัฒน์ (PIM)
+            </a>
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2 pt-1">
+            <a href="#contact" class="neu-btn neu-btn-primary">
+              <i class="bi bi-send"></i> ติดต่อฉัน (Contact)
+            </a>
+            <a href="https://github.com/TawanRutthongchan6840010911" target="_blank" rel="noopener noreferrer" class="neu-btn">
+              <i class="bi bi-github"></i> GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hr class="neu-hr">
+
+    <section id="about" class="py-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="section-eyebrow"><i class="bi bi-person-badge"></i> 01 // About Me</span>
+          <h2 class="section-title">เกี่ยวกับตัวฉัน (About Me)</h2>
+        
+
+      <div class="neu-card mb-4">
+        <p class="mb-2">
+          ชื่อเล่น <strong>"มอธ" (Moth)</strong> เป็นนักศึกษาที่มีความมุ่งมั่นด้านการพัฒนาซอฟต์แวร์แบบ Full Stack Web Development, การออกแบบระบบฐานข้อมูล (Database Architecture) และการประยุกต์ใช้โมเดลปัญญาประดิษฐ์ (AI) เพื่อแก้ปัญหาจริงอย่างสร้างสรรค์
+          ตามรูปแบบการเรียนรู้ควบคู่การปฏิบัติงาน (Work-based Education)
+        </p>
+        <hr class="neu-hr-sub">
+       
+      </div>
+
+ 
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="neu-icon-box mb-3">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3 class="h5 fw-bold">Full Stack Dev</h3>
+            <p class="small text-muted mb-0">
+              สนใจการพัฒนาเว็บแอปพลิเคชันทั้งฝั่ง Frontend (HTML5, CSS3, Bootstrap) และ Backend ที่เชื่อมต่อระบบได้อย่างมีประสิทธิภาพ
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="neu-icon-box mb-3">
+              <i class="bi bi-database-check"></i>
+            </div>
+            <h3 class="h5 fw-bold">Database System</h3>
+            <p class="small text-muted mb-0">
+              ออกแบบโครงสร้างตารางฐานข้อมูลเชิงสัมพันธ์ (Relational Database) และเขียนคำสั่ง SQL เพื่อจัดการข้อมูลอย่างเป็นระบบ
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="neu-icon-box mb-3">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3 class="h5 fw-bold">AI Application</h3>
+            <p class="small text-muted mb-0">
+              ศึกษาการนำโมเดลปัญญาประดิษฐ์และระบบอัตโนมัติมาประยุกต์ใช้ในโปรเจกต์และการแข่งขัน Hackathon ระดับนักศึกษา
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="neu-icon-box mb-3">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3 class="h5 fw-bold">Team &amp; Agile</h3>
+            <p class="small text-muted mb-0">
+              พร้อมเรียนรู้เทคโนโลยีใหม่ ทำงานร่วมกับทีมนักพัฒนา และรับฟังความคิดเห็นเพื่อพัฒนาผลงานให้ดียิ่งขึ้น
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="neu-hr">
+
+    <section id="education" class="py-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="section-eyebrow"><i class="bi bi-mortarboard"></i> 02 // Education</span>
+          <h2 class="section-title">ประวัติการศึกษา (Education)</h2>
+        </div>
+        <span class="mono-tag text-muted">สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</span>
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="mono-tag text-primary fw-semibold">2025 - ปัจจุบัน</span>
+            <h3 class="h5 fw-bold mt-2">ปริญญาตรี (B.Eng.)</h3>
+            <p class="small mb-2">
+              <em>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์</em>
+            </p>
+            <p class="small text-muted mb-0">
+              คณะวิศวกรรมศาสตร์และเทคโนโลยี <a href="http://pim.ac.th" target="_blank" rel="noopener noreferrer" class="text-decoration-none">สถาบันการจัดการปัญญาภิวัฒน์</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="mono-tag text-primary fw-semibold">ระดับมัธยมปลาย</span>
+            <h3 class="h5 fw-bold mt-2">วิทย์-คณิต (Gifted)</h3>
+            <p class="small mb-2">
+              <em>เน้นพื้นฐานคณิตศาสตร์และวิทย์</em>
+            </p>
+            <p class="small text-muted mb-0">
+              ศึกษาวิชาพื้นฐานด้านการคิดเชิงตรรกะ อัลกอริทึมเบื้องต้น และโครงงานวิทยาศาสตร์อัตโนมัติ
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="mono-tag text-primary fw-semibold">Core Coursework</span>
+            <h3 class="h5 fw-bold mt-2">รายวิชาที่ศึกษา</h3>
+            <p class="small mb-2">
+              <em>Web Dev, OOP &amp; Database</em>
+            </p>
+            <p class="small text-muted mb-0">
+              การเขียนโปรแกรมเชิงวัตถุด้วย Java, การออกแบบเว็บไซต์ด้วย HTML/CSS/Bootstrap และระบบฐานข้อมูล SQL
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="mono-tag text-primary fw-semibold">Self-Learning</span>
+            <h3 class="h5 fw-bold mt-2">การเรียนรู้เพิ่มเติม</h3>
+            <p class="small mb-2">
+              <em>Ai Local</em>
+            </p>
+            <p class="small text-muted mb-0">
+              ค้นคว้าประยุกต์ใช้งาน AI บนคอม เพื่อประหยัดค่าใช้จ่ายและเป็นส่วนตัว
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <hr class="neu-hr">
+
+    <section id="skills" class="py-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="section-eyebrow"><i class="bi bi-layers"></i> 03 // Technical &amp; Language Skills</span>
+          <h2 class="section-title">ทักษะความสามารถ (Skills)</h2>
+        </div>
+        <div class="d-flex gap-2 mt-2 mt-md-0" role="group" aria-label="Skill Filter">
+          <button type="button" class="neu-pill skill-filter-btn active" data-filter="all">ทั้งหมด (8)</button>
+          <button type="button" class="neu-pill skill-filter-btn" data-filter="tech">Programming &amp; Web</button>
+          <button type="button" class="neu-pill skill-filter-btn" data-filter="lang">Languages &amp; Tools</button>
+        </div>
+      </div>
+
+ 
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="skillsGrid">
+
+        <div class="col skill-item" data-category="tech">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-cup-hot text-primary me-1"></i> Java Programming</span>
+              <span class="mono-tag">⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 65%;"></div>
+            </div>
+            <p class="small text-muted mb-0">OOP, Class Design, Logic &amp; Data Structures พื้นฐาน</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="tech">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-database text-primary me-1"></i> SQL &amp; Database</span>
+              <span class="mono-tag">⭐⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 80%;"></div>
+            </div>
+            <p class="small text-muted mb-0">Relational Schema, SELECT/JOIN Queries &amp; ER Diagram</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="tech">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-filetype-html text-primary me-1"></i> HTML5 &amp; CSS3</span>
+              <span class="mono-tag">⭐⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 85%;"></div>
+            </div>
+            <p class="small text-muted mb-0">Semantic HTML, Custom Neumorphism &amp; Flexbox/Grid</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="tech">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-c-circle text-primary me-1"></i> C++ </span>
+              <span class="mono-tag">⭐⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 80%;"></div>
+            </div>
+            <p class="small text-muted mb-0">Responsive Grid (4/2/1), Toggle Navbar &amp; Components</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="lang">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-translate text-primary me-1"></i> English</span>
+              <span class="mono-tag">⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 65%;"></div>
+            </div>
+            <p class="small text-muted mb-0">อ่านเอกสารทางเทคนิค (Technical Docs) และการสื่อสารทั่วไป</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="lang">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-chat-dots text-primary me-1"></i> ภาษาจีน</span>
+              <span class="mono-tag">⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 40%;"></div>
+            </div>
+            <p class="small text-muted mb-0">คำศัพท์ระดับพื้นฐาน</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="lang">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-git text-primary me-1"></i> Git &amp; GitHub</span>
+              <span class="mono-tag">⭐⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 75%;"></div>
+            </div>
+            <p class="small text-muted mb-0">Version Control, Repository Hosting &amp; GitHub Pages</p>
+          </div>
+        </div>
+
+        <div class="col skill-item" data-category="lang">
+          <div class="neu-card neu-card-interactive h-100">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-bold"><i class="bi bi-robot text-primary me-1"></i> AI Prompt &amp; Tools</span>
+              <span class="mono-tag">⭐⭐⭐</span>
+            </div>
+            <div class="neu-progress mb-2">
+              <div class="neu-progress-bar" style="width: 82%;"></div>
+            </div>
+            <p class="small text-muted mb-0">การประยุกต์ใช้โมเดล AI เพื่อช่วยวิเคราะห์และสร้างต้นแบบระบบ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="neu-hr">
+
+    <section id="experience" class="py-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="section-eyebrow"><i class="bi bi-briefcase"></i> 04 // Experience &amp; Interests</span>
+          <h2 class="section-title">ผลงาน กิจกรรม และอื่น ๆ (Experience &amp; More)</h2>
+        </div>
+        <span class="mono-tag text-muted">Projects &bull; Hackathons &bull; Favorite Dishes</span>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="neu-pill mb-3 mono-tag text-primary">2020</span>
+            <h3 class="h5 fw-bold">โครงงาน Automatic</h3>
+            <p class="small text-muted mb-0">
+              พัฒนาและทดลองระบบควบคุมอัตโนมัติเบื้องต้น ฝึกทักษะการวางแผนวงจรและตรรกะการทำงานของระบบ
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="neu-pill mb-3 mono-tag text-primary">2022</span>
+            <h3 class="h5 fw-bold">พัฒนาเกม 2 มิติ (2D Game)</h3>
+            <p class="small text-muted mb-0">
+              ออกแบบกลไกการเล่น (Game Loop), การจัดการตัวละคร และการตรวจจับการชน (Collision Detection) ในเกม 2 มิติ
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="neu-pill mb-3 mono-tag text-primary">2024</span>
+            <h3 class="h5 fw-bold">Hackathon: True CyberSafe</h3>
+            <p class="small text-muted mb-0">
+              เข้าร่วมการแข่งขันระดมสมองและพัฒนาแนวคิดนวัตกรรมด้านความปลอดภัยทางไซเบอร์ (Cybersecurity Awareness)
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card neu-card-interactive h-100">
+            <span class="neu-pill mb-3 mono-tag text-primary">2026</span>
+            <h3 class="h5 fw-bold">Hackathon: AI FOR ALL</h3>
+            <p class="small text-muted mb-0">
+              ร่วมพัฒนาโซลูชันต้นแบบที่นำเทคโนโลยีปัญญาประดิษฐ์มาช่วยยกระดับคุณภาพชีวิตและการเข้าถึงบริการดิจิทัล
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="neu-card">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-5">
+            <span class="section-eyebrow"><i class="bi bi-stars"></i> Lifestyle &amp; Favorites</span>
+            <h3 class="h5 fw-bold mb-1">สิ่งที่ชอบทาน 3 อย่าง</h3>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="neu-inset">
+              <ol class="neu-contact-ol mb-0">
+                <li><strong>ข้าวผัดกะเพราเนื้อไข่ดาวกรอบ</strong> — เมนูจานด่วนรสจัดจ้านเติมพลังเวลาเขียนโค้ด</li>
+                <li><strong>ทงคตสึราเมนน้ำซุปเข้มข้น</strong> — ราเมนซุปกระดูกหมูหอมกลมกล่อมสไตล์ญี่ปุ่น</li>
+                <li><strong>แซลมอนซาชิมิ</strong> — เมนูโปรดสำหรับมื้อพิเศษและฉลองหลังจบโปรเจกต์</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="neu-hr">
+
+    <section id="contact" class="py-2">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <span class="section-eyebrow"><i class="bi bi-envelope-paper"></i> 05 // Contact Channels</span>
+          <h2 class="section-title">ช่องทางการติดต่อ (Contact Me)</h2>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <div class="col">
+          <div class="neu-card h-100">
+            <div class="neu-icon-box mb-3"><i class="bi bi-envelope-at"></i></div>
+            <h3 class="h6 fw-bold">1. อีเมลสถาบันฯ (Anti-Spam)</h3>
+            <p class="small mb-0">
+              6840010911<img src="at_symbol.png" alt="@" class="at-spam-guard">stu.pim.ac.th
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card h-100">
+            <div class="neu-icon-box mb-3"><i class="bi bi-telephone"></i></div>
+            <h3 class="h6 fw-bold">2. เบอร์โทรศัพท์ </h3>
+            <p class="small mb-0">191-000-0000</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card h-100">
+            <div class="neu-icon-box mb-3"><i class="bi bi-geo-alt"></i></div>
+            <h3 class="h6 fw-bold">3. ที่อยู่ </h3>
+            <p class="small mb-0">85/1 หมู่ 2 ถ.แจ้งวัฒนะ ต.บางตลาด อ.ปากเกร็ด จ.นนทบุรี 11120</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="neu-card h-100">
+            <div class="neu-icon-box mb-3"><i class="bi bi-github"></i></div>
+            <h3 class="h6 fw-bold">4. GitHub &amp; Social</h3>
+            <p class="small mb-0">
+              <a href="https://github.com/TawanRutthongchan6840010911" target="_blank" rel="noopener noreferrer" class="text-decoration-none">github.com/TawanRutthongchan6840010911</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-lg-6">
+          <div class="neu-card h-100">
+            <h3 class="h5 fw-bold mb-3">
+              <i class="bi bi-list-ol text-primary me-2"></i>รายละเอียดการติดต่อกลับ (Ordered List <code>&lt;ol&gt;</code>)
+            </h3>
+            <hr class="neu-hr-sub">
+
+            <ol class="neu-contact-ol">
+
+              <li>
+                <strong>อีเมลสถาบันฯ (Institutional Email):</strong><br>
+                <span class="mono-tag">
+                  6840010911<img src="at_symbol.png" alt="สัญลักษณ์ @" title="ใช้รูปภาพแทน @ เพื่อป้องกันสแปม" class="at-spam-guard">stu.pim.ac.th
+                </span>
+              </li>
+
+              <li>
+                <strong>เบอร์โทรศัพท์ (Phone Number):</strong><br>
+                <span>191-000-0000
+                </span>
+              </li>
+
+              <li>
+                <strong>ที่อยู่ติดต่อ (Address):</strong><br>
+                <span>อาคาร CP All Academy ถนนแจ้งวัฒนะ อำเภอปากเกร็ด จังหวัดนนทบุรี 11120 </span>
+              </li>
+
+              <li>
+                <strong>พอร์ตโฟลิโอและโค้ด (GitHub &amp; Website):</strong><br>
+                <a href="https://github.com/TawanRutthongchan6840010911" target="_blank" rel="noopener noreferrer">
+                  https://github.com/TawanRutthongchan6840010911
+                </a>
+                และเว็บไซต์สถาบันฯ <a href="http://pim.ac.th" target="_blank" rel="noopener noreferrer">http://pim.ac.th</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="neu-card h-100">
+            <h3 class="h5 fw-bold mb-3">
+              <i class="bi bi-chat-square-text text-primary me-2"></i>ส่งข้อความถึงฉัน (Quick Message Form)
+            </h3>
+            <hr class="neu-hr-sub">
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="senderName" class="form-label small fw-semibold">ชื่อ - นามสกุลของคุณ</label>
+                <input type="text" id="senderName" class="neu-input" placeholder="กรอกชื่อของคุณ" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="senderEmail" class="form-label small fw-semibold">อีเมลสำหรับติดต่อกลับ</label>
+                <input type="email" id="senderEmail" class="neu-input" placeholder="example@domain.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="senderMessage" class="form-label small fw-semibold">ข้อความ / หัวข้อที่ต้องการติดต่อ</label>
+                <textarea id="senderMessage" rows="3" class="neu-input" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 pt-1">
+                <button type="submit" class="neu-btn neu-btn-primary">
+                  <i class="bi bi-send-check"></i> ส่งข้อความ (Submit)
+                </button>
+                <button type="reset" class="neu-btn" id="resetFormBtn">
+                  <i class="bi bi-arrow-counterclockwise"></i> ล้างข้อมูล (Reset)
+                </button>
+              </div>
+
+              <div id="formFeedback" class="neu-inset mt-3 small d-none" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="container pb-5 pt-3 text-center">
+    <div class="neu-card py-3 px-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <div class="small text-muted">
+        &copy; 2026 <strong>ตะวัน รุททองจันทร์ (Tawan Rutthongchan)</strong> &bull; CAI @ <a href="http://pim.ac.th" target="_blank" rel="noopener noreferrer" class="text-decoration-none">PIM</a>
+      </div>
+      <div class="d-flex gap-3 small">
+        <a href="#hero" class="text-decoration-none"><i class="bi bi-arrow-up-circle"></i> กลับขึ้นด้านบน</a>
+        <a href="https://github.com/TawanRutthongchan6840010911" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><i class="bi bi-github"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
