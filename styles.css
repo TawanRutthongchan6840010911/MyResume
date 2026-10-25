@@ -1,12 +1,10 @@
-
-
 :root {
   --bg-surface: #e8eef5;
   --text-main: #1e293b;
   --text-muted: #52637a;
-  --android-green: #00a65a;
-  --android-lime: #3ddc84;
-  --google-blue: #1a73e8;
+  --accent-teal: #00a65a;
+  --accent-lime: #3ddc84;
+  --accent-blue: #1a73e8;
   --shadow-light: #ffffff;
   --shadow-dark: #c5d0de;
   --neu-outset: 9px 9px 18px var(--shadow-dark), -9px -9px 18px var(--shadow-light);
@@ -22,8 +20,8 @@ body.dark-mode {
   --bg-surface: #1e242b;
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
-  --android-green: #3ddc84;
-  --google-blue: #60a5fa;
+  --accent-teal: #3ddc84;
+  --accent-blue: #60a5fa;
   --shadow-light: #272f38;
   --shadow-dark: #15191e;
 }
@@ -47,7 +45,6 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.04em;
 }
-
 
 .neu-card {
   background-color: var(--bg-surface);
@@ -92,7 +89,7 @@ body.dark-mode .neu-card {
 .neu-pill:hover,
 .neu-pill.active {
   box-shadow: var(--neu-inset-sm);
-  color: var(--google-blue);
+  color: var(--accent-blue);
 }
 
 .neu-btn {
@@ -114,12 +111,12 @@ body.dark-mode .neu-card {
 
 .neu-btn:hover {
   box-shadow: var(--neu-inset-sm);
-  color: var(--google-blue);
+  color: var(--accent-blue);
   transform: translateY(1px);
 }
 
 .neu-btn-primary {
-  color: var(--google-blue);
+  color: var(--accent-blue);
 }
 
 .neu-icon-box {
@@ -132,7 +129,7 @@ body.dark-mode .neu-card {
   align-items: center;
   justify-content: center;
   font-size: 1.35rem;
-  color: var(--google-blue);
+  color: var(--accent-blue);
   flex-shrink: 0;
 }
 
@@ -157,12 +154,12 @@ body.dark-mode .navbar-neu {
   text-decoration: none;
 }
 
-.android-badge-dot {
+.status-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--android-lime);
-  box-shadow: 0 0 10px var(--android-lime);
+  background: var(--accent-lime);
+  box-shadow: 0 0 10px var(--accent-lime);
   display: inline-block;
 }
 
@@ -178,7 +175,7 @@ body.dark-mode .navbar-neu {
 
 .nav-link-neu:hover,
 .nav-link-neu.active {
-  color: var(--google-blue) !important;
+  color: var(--accent-blue) !important;
   box-shadow: var(--neu-inset-sm);
 }
 
@@ -228,12 +225,18 @@ body.dark-mode .navbar-neu {
   padding: 0.2rem 0.65rem;
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--android-green);
+  color: var(--accent-teal);
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
 }
 
+.inst-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+}
 
 hr.neu-hr {
   border: none;
@@ -264,7 +267,7 @@ hr.neu-hr-sub {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--android-green);
+  color: var(--accent-teal);
   background-color: var(--bg-surface);
   box-shadow: var(--neu-inset-sm);
   padding: 0.3rem 0.85rem;
@@ -291,10 +294,9 @@ hr.neu-hr-sub {
 .neu-progress-bar {
   height: 100%;
   border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, var(--google-blue), var(--android-lime));
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-lime));
   transition: width 0.6s ease;
 }
-
 
 .at-spam-guard {
   width: 22px;
@@ -316,23 +318,5 @@ ol.neu-contact-ol li {
 
 ol.neu-contact-ol li::marker {
   font-weight: 700;
-  color: var(--google-blue);
-}
-
-
-.neu-input {
-  width: 100%;
-  background-color: var(--bg-surface);
-  border: none;
-  border-radius: 14px;
-  box-shadow: var(--neu-inset-sm);
-  padding: 0.75rem 1rem;
-  color: var(--text-main);
-  font-size: 0.92rem;
-  transition: box-shadow 0.2s ease;
-}
-
-.neu-input:focus {
-  outline: none;
-  box-shadow: var(--neu-inset), 0 0 0 2px var(--google-blue);
+  color: var(--accent-blue);
 }
